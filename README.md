@@ -1,3 +1,6 @@
+**https://travis-ci.com/skkriss/FourGame.svg?branch=master**
+
+
 **REGUŁY ODDAWANIA PROJEKTU**
 
 Wybieramy jedno z poniższych zadań. Zadania różnią się poziomem trudności i są inaczej punktowane.
