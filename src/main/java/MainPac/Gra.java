@@ -3,7 +3,6 @@ package MainPac;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Optional;
 import java.util.Scanner;
 
 public class Gra
@@ -22,7 +21,7 @@ public class Gra
     String fileName = null;
 
 
-    public Gra(int row,int column,boolean initListPlayers)
+    public Gra(int row,int column,boolean initListGracze)
     {
 
         if(row < 4 || column < 4)
@@ -39,7 +38,7 @@ public class Gra
                 board[i][j] = 0;
             }
         }
-        if(initListPlayers)
+        if(initListGracze)
             gracze = new ArrayList<Gracz>();
         lastRun = -1;
         win = 0;
@@ -302,7 +301,7 @@ public class Gra
                 if(graczeSet == 2)
                 {
                     increasStatistic();
-                    writeListPlayers(fileName);
+                    writeListGracze(fileName);
                 }
                 return "Plansza jest pelna! Remis!";
             }
@@ -310,7 +309,7 @@ public class Gra
             if(graczeSet == 2)
             {
                 increasStatistic();
-                writeListPlayers(fileName);
+                writeListGracze(fileName);
             }
             return message;
         }
@@ -453,7 +452,7 @@ public class Gra
         return gracze;
     }
 
-    public void writeListPlayers(String fileName)
+    public void writeListGracze(String fileName)
     {
 
         File file;
