@@ -7,7 +7,7 @@ import java.util.Optional;
 import java.util.Scanner;
 
 
-public class Gra 
+public class Gra
 {
 
     int board[][];
@@ -42,7 +42,7 @@ public class Gra
             }
         }
         if(initListPlayers)
-        gracze = new ArrayList<Gracz>();
+            gracze = new ArrayList<Gracz>();
         lastRun = -1;
         win = 0;
         countAddedTokens = 0;
