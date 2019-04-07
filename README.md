@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.com/skkriss/FourGame.svg?branch=master)](https://travis-ci.com/skkriss/FourGame)
 
+[![codecov.io Code Coverage](https://travis-ci.com/skkriss/FourGame.svg?branch=master)](https://travis-ci.com/skkriss/FourGame)
 
 **REGUŁY ODDAWANIA PROJEKTU**
 
