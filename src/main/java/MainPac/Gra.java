@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class Gra
 {
-
     int board[][];
     int lastRun;
     int rows;
