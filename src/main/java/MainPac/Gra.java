@@ -318,7 +318,7 @@ public class Gra
             moveOK = false;
             if(win != 0) return "Koniec gry.";
             if(lastRun == player) return  "Twoja kolej.";
-            if(countAddedTokens >= (rows*columns)) { win = 3; return "Plansza pelna! Remin!"; }
+            if(countAddedTokens >= (rows*columns)) { win = 3; return "Plansza pelna! Remis!"; }
             if(board[0][col] != 0) return "Kolumna pelna.";
         }
         return null;
