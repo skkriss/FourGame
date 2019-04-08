@@ -54,7 +54,7 @@ public class Menu
 
                         column = input.nextInt();
 
-                        message = gra.movePlayer(gracz, column);
+                        message = gra.moveGracz(gracz, column);
                         System.out.println(message);
 
                         if (gra.moveOK == false)

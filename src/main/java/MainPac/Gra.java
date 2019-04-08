@@ -228,22 +228,22 @@ public class Gra
         if(checkWinVertical(player,row,column))
         {
             win = player;
-            return "Gracz"+player+" Wygrywa! :)";
+            return "Gracz"+player+" Wygrywa! (vertical)";
         }
         if(checkWinHorizontal(player,row,column))
         {
             win = player;
-            return "Gracz"+player+" Wygrywa! :)";
+            return "Gracz"+player+" Wygrywa! (horizontal)";
         }
         if(checkWinDiagonallyAsc(player,row,column))
         {
             win = player;
-            return "Gracz"+player+" Wygrywa! :)";
+            return "Gracz"+player+" Wygrywa! (diagonallyAsc)";
         }
         if(checkWinDiagonallyDesc(player,row,column))
         {
             win = player;
-            return "Gracz"+player+" Wygrywa! :)";
+            return "Gracz"+player+" Wygrywa! (diagonallyDesc)";
         }
         return "Nikt nie wygral :(";
     }
@@ -280,7 +280,7 @@ public class Gra
 
     /////////////////////////////////////////////////////////////////////////////////////////////
 
-    public String movePlayer(int player,int col)
+    public String moveGracz(int player,int col)
     {
         if(col < 0 || col > columns -1)
         {
@@ -324,7 +324,7 @@ public class Gra
         return null;
     }
 
-    public Gracz serachPlayer(String nick,String password)
+    public Gracz serachGracz(String nick,String password)
     {
         for(Gracz player : gracze)
         {
@@ -361,7 +361,7 @@ public class Gra
 
         if(exist == true)
         {
-            Gracz playerSerach = serachPlayer(nick, pass);
+            Gracz playerSerach = serachGracz(nick, pass);
 
             if (playerSerach != null)
             {
@@ -382,7 +382,7 @@ public class Gra
         }
         else
         {
-            if(serachPlayer(nick,pass) != null)
+            if(serachGracz(nick,pass) != null)
             {
                 return "Gracz juz istnieje!";
             }
