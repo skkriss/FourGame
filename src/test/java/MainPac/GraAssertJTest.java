@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 
 @DisplayName("AssertJ Tests.")
-public class GraTestAssertJ 
+public class GraAssertJTest
 {
     private Gra gra;
     private int rows,columns;
